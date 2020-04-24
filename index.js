@@ -13,4 +13,6 @@ app.get('/all-assets', function(req, res){
     res.send({assest: files})
 })
 
-app.listen(3000)
+let PORT = process.env.PORT || 3000;
+
+app.listen(PORT)
