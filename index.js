@@ -4,7 +4,7 @@ const app = express()
 
 app.use(express.static('Resources'));
 
-app.get('/hello', function (req, res) {
+app.get('/', function (req, res) {
     res.send({hello: 'world'})
 })
 
